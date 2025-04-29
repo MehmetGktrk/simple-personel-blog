@@ -11,7 +11,7 @@ async function verifyToken(req, res, next) {
 
         const token = authHeader.split(' ')[1];
         const decoded = jwt.verify(token, config.jwtSecret);
-        req.username = decoded;
+        req.username = decoded.username;
         next()
     } catch (err) {
         return res.status(401).json({ code: 401, message: 'Unauthorized: Invalid token.' });

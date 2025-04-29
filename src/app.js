@@ -8,6 +8,7 @@ const authMiddleware = require('./middlewares/authMiddleware');
 
 
 const authRoutes = require('./routes/authRoutes');
+const postRoutes = require('./routes/postRoutes');
 
 
 
@@ -27,7 +28,7 @@ app.use(timeMiddleware);
 
 
 app.use('/auth', authRoutes);
-
+app.use('/post', authMiddleware, postRoutes); 
 
 
 module.exports = app;
