@@ -28,7 +28,7 @@ app.use(timeMiddleware);
 
 
 app.use('/auth', authRoutes);
-app.use('/post', authMiddleware, postRoutes); 
+app.use('/post', postRoutes); // authMiddleware in routes
 
 
 module.exports = app;
