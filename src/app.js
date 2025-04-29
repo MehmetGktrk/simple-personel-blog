@@ -4,7 +4,6 @@ const cors = require('cors');
 
 const databaseMiddleware = require('./middlewares/databaseMiddleware');
 const timeMiddleware = require('./middlewares/timeMiddleware');
-const authMiddleware = require('./middlewares/authMiddleware');
 
 
 const authRoutes = require('./routes/authRoutes');
@@ -28,7 +27,7 @@ app.use(timeMiddleware);
 
 
 app.use('/auth', authRoutes);
-app.use('/post', authMiddleware, postRoutes); 
+app.use('/post', postRoutes); // authMiddleware in routes
 
 
 module.exports = app;
