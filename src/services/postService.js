@@ -9,6 +9,7 @@ exports.createPost = async(db, username, title, content ) => {
         title: title,
         content: content,
         author: username,
+        likes: 0,
         createdAt: now,
         updatedAt: null
     }

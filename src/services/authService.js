@@ -28,6 +28,7 @@ exports.register = async(db, username, email, password) => {
         username: username,
         email: email,
         password: hashedPassword,
+        likedPosts: [],
         createdAt: now
     }
 
