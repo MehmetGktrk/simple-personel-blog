@@ -1,0 +1,252 @@
+{
+    "info": {
+        "_postman_id": "bf9aabf2-7735-4bcf-8847-3649845220c7",
+        "name": "simple-personel-blog",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/auth/register",
+                    "path": [
+                        "auth",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\": \"username\",\n  \"email\": \"mail@mail.com\",\n  \"password\": \"123456\"\n}"
+                }
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/auth/login",
+                    "path": [
+                        "auth",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"emailOrUsername\": \"mail@mail.com\",\n  \"password\": \"123456\"\n}"
+                }
+            }
+        },
+        {
+            "name": "createPost",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/post/createPost",
+                    "path": [
+                        "post",
+                        "createPost"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"title\": \"title\",\n  \"content\": \"sdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsdsdfdsgfdsgdsghdsgdsgdgdgdgsd\"\n}\n"
+                }
+            }
+        },
+        {
+            "name": "updatePost",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:3000/post/updatePost/postID",
+                    "path": [
+                        "post",
+                        "updatePost",
+                        "postID"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"title\": \"new Title\",\n  \"content\": \"new Content\"\n}"
+                }
+            }
+        },
+        {
+            "name": "deletePost",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3000/post/deletePost/postID",
+                    "path": [
+                        "post",
+                        "deletePost",
+                        "postID"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "getPost",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/post/getPost/postID",
+                    "path": [
+                        "post",
+                        "getPost",
+                        "postID"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "likePost",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/like/likePost/postID",
+                    "path": [
+                        "like",
+                        "likePost",
+                        "postID"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "unlikePost",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/like/unlikePost/postID",
+                    "path": [
+                        "like",
+                        "unlikePost",
+                        "postID"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "getProfile",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/profile/getProfile/user",
+                    "path": [
+                        "profile",
+                        "getProfile",
+                        "user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "follow",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/follow/follow/user",
+                    "path": [
+                        "follow",
+                        "follow",
+                        "user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "unfollow",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/follow/unfollow/user",
+                    "path": [
+                        "follow",
+                        "unfollow",
+                        "user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        }
+    ]
+}
