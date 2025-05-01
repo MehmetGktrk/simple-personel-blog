@@ -11,6 +11,7 @@ const authRoutes = require('./routes/authRoutes');
 const postRoutes = require('./routes/postRoutes');
 const likeRoutes = require('./routes/likeRoutes');
 const profileRoutes = require('./routes/profileRoutes');
+const followRoutes = require('./routes/followRoutes');
 
 
 
@@ -31,6 +32,7 @@ app.use(timeMiddleware);
 app.use('/auth', authRoutes);
 app.use('/post', postRoutes); // authMiddleware in routes
 app.use('/like', authMiddleware, likeRoutes);
-app.use('/profile', profileRoutes)
+app.use('/profile', profileRoutes);
+app.use('/follow', authMiddleware, followRoutes);
 
 module.exports = app;
