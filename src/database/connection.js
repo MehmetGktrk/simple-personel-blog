@@ -23,4 +23,5 @@ function getDB(){
     return dbClient.db(config.databaseName);
 }
 
-module.exports = { connectDB, getDB }
+
+module.exports = { connectDB, getDB }   
