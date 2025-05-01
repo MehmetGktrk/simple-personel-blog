@@ -28,6 +28,20 @@ This personal blog backend project includes the following features:
 - ❤️ **Post Likes**
   - Like and unlike blog posts
 
+## 🧰 Tech Stack
+
+This project is built with the following technologies:
+
+- **Node.js** – JavaScript runtime
+- **Express.js** – Web framework for Node.js
+- **MongoDB** – NoSQL database
+- **JWT (jsonwebtoken)** – Authentication via tokens
+- **bcrypt** – Password hashing
+- **express-validator** – Input validation
+- **Thunder Client / Postman** – API testing
+- **MVC Pattern** – Modular controller-service-route structure
+- **Dotenv** – For environment variable management
+
 ## 🛠️ Installation
 
 ```bash
